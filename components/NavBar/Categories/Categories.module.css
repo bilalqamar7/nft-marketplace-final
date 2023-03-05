@@ -1,0 +1,11 @@
+.categories{
+    padding: .5rem .2rem;
+    transition: all .3s ease-in;
+    z-index: 2222222222;
+}
+
+.categories:hover{
+    background-color: var(--icons-color);
+    color: black;
+    border-radius: .5rem;
+}

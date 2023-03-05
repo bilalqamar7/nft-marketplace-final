@@ -1,0 +1,70 @@
+.h2 {
+    text-align: center;
+    color: white;
+    margin-top: 120px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.carousel {
+    text-align: center;
+    margin: 40px 200px 100px 200px;
+}
+
+.carousel_card {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.carousel_card1 {
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.carousel_card2 {
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.carousel_card3 {
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.carousel_card4 {
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.carousel_card5 {
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.carousel_card6 {
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px 0px 40px 100px;
+        gap: 1rem 3rem;
+    }
+
+    .carousel_card{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

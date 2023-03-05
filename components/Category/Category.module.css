@@ -1,0 +1,22 @@
+.category{
+    display: grid;
+    grid-template-rows: 2fr;
+}
+
+.category_box{
+    width: 100%;
+    padding-top: 40px;
+    margin: 10px 0px 60px 0px ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .category_box {
+      display: block;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 10px 10px 40px 10px;
+      gap: 1rem 1rem;
+    }
+  }

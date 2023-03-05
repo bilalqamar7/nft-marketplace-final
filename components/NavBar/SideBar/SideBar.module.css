@@ -1,0 +1,57 @@
+.sideBar_box{
+    padding: 1rem;
+    border-bottom: 1px solid var(--icons-color);
+    background-color:  var(--main-bg-color);
+}
+
+.sideBar_box_logo{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.sideBar_box p{
+    margin-top:  -1.5rem;
+}
+
+.sideBar_social{
+    display: flex;
+    gap: 1.2rem;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.sideBar_social a{
+    padding: .1rem;
+    border-radius: 50%;
+    transition:  all .3s ease-in;
+    display: flex;
+}
+
+.sideBar_menu{
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom:  1px solid var(--icons-color);
+}
+
+.sideBar_menu_box{
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sideBar_discover{
+    padding-inline: 0.8rem;
+}
+
+.sideBar_button{
+    color: white;
+    background-color: black;
+    padding: 1.5rem .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+}

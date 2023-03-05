@@ -1,0 +1,167 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.leftContainer {
+    flex-basis: 100%;
+    max-width: 90%;
+    padding: 1rem;
+}
+
+.rightContainer {
+    flex-basis: 100%;
+    max-width: 90%;
+    padding: 1rem;
+    line-height: 30px;
+}
+
+.coverImage {
+    margin-bottom: 1rem;
+}
+
+.coverImageLabel {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.coverImageInput {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.collectionName,
+.collectionDescription,
+.category,
+.relatedLinks,
+.blockchain,
+.tokenStandard,
+.ageRating {
+    margin-bottom: 1rem;
+}
+
+.collectionName label,
+.collectionDescription label,
+.category h3,
+.relatedLinks label,
+.blockchain label,
+.tokenStandard label,
+.ageRating h3 {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.collectionNameInput,
+.collectionDescriptionInput,
+.relatedLinksInput,
+.blockchainSelect,
+.tokenStandardSelect {
+    display: block;
+    width: 100%;
+    margin-left: 5px;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+    background-color: rgb(15, 15, 15);
+}
+
+.categoryButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.categoryButton {
+    flex-basis: calc(33.33% - 1rem);
+    max-width: calc(33.33% - 1rem);
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.ageRatingLabel {
+    display: flex;
+    align-items: center;
+}
+
+.ageRatingLabel input {
+    margin-right: 0.5rem;
+}
+
+.submitButton {
+    display: block;
+    margin: 0 auto;
+    padding: 0.9rem 1.5rem 0.7rem 1.5rem;
+    border: 1px solid black;
+    border-radius: 0rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+    box-shadow: 7px 7px 10px rgb(15, 15, 15);
+}
+
+.submitButton:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .leftContainer {
+        flex-basis: 100%;
+        max-width: 90%;
+        padding: 2rem 2rem 0rem 1.2rem;
+    }
+
+    .rightContainer {
+        flex-basis: 100%;
+        max-width: 90%;
+        padding: 0rem 2rem 1.5rem 1.2rem;
+    }
+
+    .categoryButtons {
+        justify-content: flex-start;
+    }
+
+    .categoryButton {
+        flex-basis: calc(50% - 1rem);
+        max-width: calc(50% - 1rem);
+    }
+
+    .submitButton {
+        display: block;
+        margin: 00px auto 40px auto;
+        padding: 0.9rem 1rem 0.7rem 1rem;
+        border: 1px solid transparent;
+        border-radius: 0rem;
+        font-size: .8rem;
+        font-weight: bold;
+        color: black;
+        background-color: white;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in;
+    }
+}

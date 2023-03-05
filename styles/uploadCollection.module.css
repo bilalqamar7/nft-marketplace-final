@@ -1,0 +1,30 @@
+
+.uploadCollection{
+    width: 100%;
+    margin-block: 8rem;
+    display: contents;
+    background-image: url('/img/mesh.svg');
+}
+
+.uploadCollection_box{
+    width: 90%;
+    margin:  0 auto;
+}
+
+.uploadCollection_box_heading h1{
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .uploadCollection_box{
+        width: 90%;
+    }
+
+    .uploadCollection_box_heading h1{
+        font-size: 2rem;
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+    }
+}
