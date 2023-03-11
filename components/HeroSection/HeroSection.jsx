@@ -12,13 +12,12 @@ const HeroSection = () => {
         <div className={Style.heroSection_box_left}>
           <h1>Discover, create and sell<br></br> unique NFTs</h1>
         </div>
-        <div className={Style.heroSection_box_right}>
-          <Image
+          
+        <Image
+        className={Style.heroSection_img}
             src={images.mainhero}
             alt="Hero Section image"
-            width={520}
-            height={330} />
-        </div>
+            />
       </div>
     </div>
   )

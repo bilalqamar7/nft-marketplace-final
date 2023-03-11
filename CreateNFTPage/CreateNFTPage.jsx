@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+//Internal Import
 import Style from './CreateNFTPage.module.css';
 
 const CreateNFT = ()=> {

@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+
 import {
   TiSocialFacebook,
   TiSocialLinkedin,
@@ -26,21 +28,21 @@ const Footer = () => {
           </p>
 
           <div className={Style.footer_social}>
-            <a href="#">
+            <Link href="#">
               <TiSocialFacebook />
-            </a>
-            <a href="#">
+            </Link>
+            <Link href="#">
               <TiSocialLinkedin />
-            </a>
-            <a href="#">
+            </Link>
+            <Link href="#">
               <TiSocialTwitter />
-            </a>
-            <a href="#">
+            </Link>
+            <Link href="#">
               <TiSocialYoutube />
-            </a>
-            <a href="#">
+            </Link>
+            <Link href="#">
               <TiSocialInstagram />
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -52,11 +54,11 @@ const Footer = () => {
         </div>
 
         <div className={Style.footer_box_quickref}>
-        <h5><a href=".">Homepage</a></h5>
-        <h5><a href="./collections">Collections</a></h5>
-        <h5><a href="./uploadNFT">Create NFT</a></h5>
-        <h5><a href="./uploadCollection">Create Collection</a></h5>
-        <h5><a href="./aboutus">About Us</a></h5>
+        <h5><Link href=".">Homepage</Link></h5>
+        <h5><Link href="./collections">Collections</Link></h5>
+        <h5><Link href="./uploadNFT">Create NFT</Link></h5>
+        <h5><Link href="./uploadCollection">Create Collection</Link></h5>
+        <h5><Link href="./aboutus">About Us</Link></h5>
 
         </div>
       </div>

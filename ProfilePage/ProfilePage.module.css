@@ -24,9 +24,9 @@
 }
 
 .profileImageContainer {
-    border-radius: 50%;
+    border-radius: 10%;
     overflow: hidden;
-    margin-right: 30px;
+    margin-right: 0px;
 }
 
 .usernameContainer {
@@ -152,9 +152,9 @@
     margin-top: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 570px) {
     .container {
-        max-width: 85%;
+        max-width: 90%;
         margin: 10px;
     }
 
@@ -163,14 +163,15 @@
         gap: 20px;
         align-items: center;
         justify-content: space-between;
-        padding: 0px 0px 40px 0px;
+        padding: 0px 0px 40px 15px;
         border-bottom: 1px solid #707070;
     }
 
     .leftContainer {
         display: grid;
-        gap: px;
+        gap: 15px;
         align-items: center;
+        justify-content: center;
     }
 
     .rightContainer {
@@ -180,10 +181,9 @@
     }
 
     .profileImageContainer {
-        border-radius: 50%;
-        margin-bottom: 10px;
+        border-radius: 0%;
+        margin: 0px auto 10px auto;
         overflow: hidden;
-        margin-right: 30px;
     }
 
     .usernameContainer {
@@ -208,8 +208,8 @@
     }
 
     .settingsButton {
-        margin-left: 10px;
-        margin-right: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
         font-size: 13px;
         background-color: transparent;
         border: 1px solid white;

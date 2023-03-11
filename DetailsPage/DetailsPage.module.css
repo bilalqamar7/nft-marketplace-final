@@ -1,95 +1,121 @@
-
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.leftContainer {
+  flex: 1 0 500px;
+  padding-right: 0px;
+  padding-left: 20px;
+}
+
+.rightContainer {
+  flex: 1 0 300px;
+  margin-top: 20px;
+  text-align: center;
+  padding-right: 20px;
+}
+
+.collectionName {
+  margin-bottom: 10px;
+}
+
+.NFTName {
+  margin-bottom: 10px;
+}
+
+.creatorName {
+  margin-bottom: 20px;
+}
+
+.NFTDescription {
+  margin: 40px 150px 0px 0px;
+}
+
+.collectionDescription {
+  margin: 40px 150px 0px 0px;
+}
+
+.tokenDetails {
+  margin-top: 20px;
+  background-color: rgba(15, 15, 15, 0.559);
+  border-radius: 5px;
+}
+
+.priceDetails {
+  margin-top: 30px;
+}
+
+.tokenDetail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 0 10px 0 10px;
+}
+
+.priceDetail {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 40px 10px 40px;
+  font-weight: bold;
+}
+
+.offerButton {
+  margin-top: 30px;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.offerButton:hover {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
   }
-  
+
   .leftContainer {
-    flex: 1 0 500px;
-    padding-right: 0px;
-    padding-left: 20px;
+    flex: 1 0 auto;
+    padding-right: 0;
   }
-  
+
   .rightContainer {
-    flex: 1 0 300px;
-    margin-top: 20px;
-    text-align: center;
-    padding-right: 20px;
+    flex: 1 0 auto;
   }
-  
-  .collectionName {
-    margin-bottom: 10px;
+
+  .tokenDetail{
+    font-size: smaller;
+    margin-left: 5px;
+    margin-right: 0px;
   }
-  
-  .NFTName {
-    margin-bottom: 10px;
+
+  .priceDetail {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 10px;
+    font-weight: bold;
+    font-size: smaller;
   }
-  
-  .creatorName {
-    margin-bottom: 20px;
-  }
-  
+
   .NFTDescription {
-    margin-top: 40px;
+    margin: 40px 20px 0px 0px;
+    font-size: smaller;
   }
   
   .collectionDescription {
-    margin-top: 40px;
+    margin: 30px 20px 0px 0px;
+    font-size: smaller;
   }
-  
-  .tokenDetails {
-    margin-top: 30px;
-  }
-  
-  .priceDetails {
-    margin-top: 30px;
-  }
-  
-  .tokenDetail {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
-  
-  .priceDetail {
-    display: flex;
-    justify-content: space-between;
-    margin: 0px 130px 10px 130px;
-    font-weight: bold;
-  }
-
-  .offerButton{
-    margin-top: 30px;
-    color: black;
-    background-color: white;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 10px 30px;
-
-  }
-  
-  @media screen and (max-width: 768px) {
-    .container {
-      flex-direction: column;
-    }
-  
-    .leftContainer {
-      flex: 1 0 auto;
-      padding-right: 0;
-    }
-  
-    .rightContainer {
-      flex: 1 0 auto;
-    }
-
-    .priceDetail {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content:center;
-        gap: 10px;
-        font-weight: bold;
-      }
-  }
-  
+}

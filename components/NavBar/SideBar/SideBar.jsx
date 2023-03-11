@@ -9,6 +9,7 @@ import {
   TiArrowSortedDown,
   TiArrowSortedUp,
 } from "react-icons/ti";
+import { BsMenuDown, BsSearch } from "react-icons/bs";
 
 //INTERNAL IMPORT
 import Button from "../../Button/Button";
@@ -48,9 +49,9 @@ const SideBar = ({ setOpenSideMenu }) => {
   };
 
 
-  const closeSideBar = () => {
-    setOpenSideMenu(false);
-  };
+  // const closeSideBar = () => {
+  //   setOpenSideMenu(false);
+  // };
 
   return (
     <div className={Style.sideBar}>
@@ -65,24 +66,29 @@ const SideBar = ({ setOpenSideMenu }) => {
           Discover the most unique NFTs on our marketplace
         </p>
         <div className={Style.sideBar_social}>
-          <a href="#">
+          <Link href="#">
             <TiSocialFacebook />
-          </a>
-          <a href="#">
+          </Link>
+          <Link href="#">
             <TiSocialLinkedin />
-          </a>
-          <a href="#">
+          </Link>
+          <Link href="#">
             <TiSocialTwitter />
-          </a>
-          <a href="#">
+          </Link>
+          <Link href="#">
             <TiSocialYoutube />
-          </a>
-          <a href="#">
+          </Link>
+          <Link href="#">
             <TiSocialInstagram />
-          </a>
+          </Link>
         </div>
       </div>
-
+      <div className={Style.sidebar_container_left_box_input}>
+            <div className={Style.sidebar_container_left_box_input_box}>
+              <input type="text" placeholder="Search NFTs" />
+              <Link href="./search"><BsSearch onClick={() => { }} className={Style.search_icon} /></Link>
+            </div>
+          </div>
       <div className={Style.sideBar_menu}>
         <div>
           <div
@@ -106,9 +112,13 @@ const SideBar = ({ setOpenSideMenu }) => {
       </div>
 
       <div className={Style.sideBar_button}>
-        <a href="./uploadNFT"><Button btnName="Create" handleClick={() => { }} /></a>
-        <a href="./profile"><Button btnName="Profile" handleClick={() => { }} /></a>
-        <Button btnName="Connect" handleClick={() => { }} />
+      <Link href="./uploadNFT" className={Style.navbar_container_right_button_create}>
+            <button className={Style.createButton}>CREATE NFT</button>
+          </Link>
+        <Link href="./profile">
+          <Button btnName="Profile" handleClick={() => { }} />
+          </Link>
+        <Button btnName="Connect Wallet" handleClick={() => { }} />
       </div>
     </div>
   );

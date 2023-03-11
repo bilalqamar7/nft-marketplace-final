@@ -52,18 +52,18 @@ const NavBar = () => {
 
         {/*START OF LEFT SECTION*/}
         <div className={Style.navbar_container_left}>
-          <a className={Style.logo} href=".">
+          <Link className={Style.logo} href=".">
             <Image 
               src={image.logo}
               alt="NFT Marketplace logo"
               width={100}
               height={100}
             />
-          </a>
+          </Link>
           <div className={Style.navbar_container_left_box_input}>
             <div className={Style.navbar_container_left_box_input_box}>
               <input type="text" placeholder="Search NFTs" />
-              <BsSearch onClick={() => { }} className={Style.search_icon} />
+              <Link href="./search"><BsSearch onClick={() => { }} className={Style.search_icon} /></Link>
             </div>
           </div>
         </div>
@@ -83,14 +83,14 @@ const NavBar = () => {
           </div>
 
           {/*  PROFILE Button*/}
-          <a href="./profile" className={Style.navbar_container_right_button_create}>
+          <Link href="/profile" className={Style.navbar_container_right_button_create}>
             PROFILE
-          </a>
+          </Link>
 
           {/*  CREATE Button*/}
-          <a href="./uploadNFT" className={Style.navbar_container_right_button_create}>
+          <Link href="./uploadNFT" className={Style.navbar_container_right_button_create}>
             <button className={Style.createButton}>CREATE NFT</button>
-          </a>
+          </Link>
 
           {/*  Connect Wallet Button*/}
           <div className={Style.navbar_container_right_button_connect}>

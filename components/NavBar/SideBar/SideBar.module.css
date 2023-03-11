@@ -1,7 +1,11 @@
+
+.sideBar{
+    background-color: none;
+}
 .sideBar_box{
     padding: 1rem;
     border-bottom: 1px solid var(--icons-color);
-    background-color:  var(--main-bg-color);
+    background-color:  transparent;
 }
 
 .sideBar_box_logo{
@@ -28,6 +32,26 @@
     display: flex;
 }
 
+.sidebar_container_left_box_input_box{
+    width: auto;
+    display:flex;
+    align-items: center;
+    padding: .5rem;
+    background-color: rgb(29, 29, 29);
+}
+
+.sidebar_container_left_box_input_box input{
+    width: 96%;
+    border: none;
+    outline: none;
+    background-color:  transparent;
+}
+
+.search_icon{
+    cursor: pointer;
+    font-size: 1rem;
+}
+
 .sideBar_menu{
     padding: 1rem;
     text-transform: uppercase;
@@ -42,16 +66,35 @@
     cursor: pointer;
 }
 
-.sideBar_discover{
+.sideBar_categories{
     padding-inline: 0.8rem;
 }
 
+.createButton{
+    padding: 10px 15px;
+    border-radius: 30px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    transition: 0.3s ease-in;
+  }
+  
+  .createButton:hover {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+  }
+
 .sideBar_button{
     color: white;
-    background-color: black;
-    padding: 1.5rem .5rem;
-    display: flex;
+    background-color: transparent;
+    padding: 1rem 1rem;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
     align-items: center;
-    justify-content: space-between;
-    column-gap: 10px;
+    justify-content: center;
+    row-gap: 15px;
 }

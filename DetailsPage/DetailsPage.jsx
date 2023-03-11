@@ -4,7 +4,6 @@ import Image from 'next/image';
 //Internal import
 import Style from "./DetailsPage.module.css";
 import images from "../img";
-import { Button } from "@/components/componentsindex";
 
 const DetailsPage = () => {
   return (
@@ -27,10 +26,10 @@ const DetailsPage = () => {
           />
         </div>
         <div className={Style.NFTDescription}>
-          <p>Description of NFT goes here.</p>
+          <p>Description of NFT goes here. This can be as long as the user wants and should contain the details about the NFT.</p>
         </div>
         <div className={Style.collectionDescription}>
-          <p>Description of collection goes here.</p>
+          <p>Description of collection goes here. This section describes what the collection is about and what kind of NFTs will be uploaded here.</p>
         </div>
       </div>
 
@@ -42,8 +41,8 @@ const DetailsPage = () => {
               <p>12345</p>
             </div>
             <div className={Style.tokenDetail}>
-              <p>Smart Contract Address:</p>
-              <p>0x12345...</p>
+              <p>Contract Address:</p>
+              <p>0x0212345...</p>
             </div>
             <div className={Style.tokenDetail}>
               <p>Token Standard:</p>
@@ -62,7 +61,7 @@ const DetailsPage = () => {
           <div className={Style.priceDetails}>
             <div className={Style.priceDetail}>
               <p>Views: </p>
-              <p>1,234</p>
+              <p>62,341</p>
             </div>
             <div className={Style.priceDetail}>
               <p>Category:</p>
@@ -70,7 +69,7 @@ const DetailsPage = () => {
             </div>
             <div className={Style.priceDetail}>
               <p>Current Price:</p>
-              <p>1 ETH</p>
+              <p>1.62 ETH</p>
             </div>
           </div>
           <button className={Style.offerButton} type="submit">Make Offer</button>

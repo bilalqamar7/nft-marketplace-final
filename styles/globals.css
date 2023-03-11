@@ -283,6 +283,6 @@ a {
 
   body {
     color: white;
-    background: radial-gradient(black 500px , rgb(56, 0, 56) 250% )
+    background: radial-gradient(black 50% , rgb(56, 0, 56) 250% )
   }
 }

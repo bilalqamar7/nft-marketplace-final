@@ -3,24 +3,23 @@
     width: 100%;
     padding-block: 1.5rem;
     position: relative;
-    z-index: 111111111;
 }
 
 .navbar_container{
     width: 90%;
-    margin:  0 auto;
-
-    display:  flex;
+    margin: 0 auto;
+    display: flex;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .navbar_container_left{
-    display: grid;
+    display: flex;
     grid-template-columns: 2fr 2fr;
     align-items:  center;
+    gap: 5rem;
 }
 
 .logo{
@@ -97,7 +96,7 @@
   padding: 10px 15px;
   border-radius: 30px;
   color: white;
-  background-color: black;
+  background-color: transparent;
   border: 1px solid white;
   transition: 0.3s ease-in;
 }
@@ -132,9 +131,10 @@
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     .navbar_container {
-      width: 100%;
+      width: 95%;
+      margin:auto;
       display: flex;
       flex-direction: row;
       justify-content: space-between;

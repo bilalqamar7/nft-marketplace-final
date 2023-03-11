@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link';
 
 //Internal import
 import Style from "./Popular.module.css"
@@ -16,17 +17,21 @@ const Popular = () => {
                 <div className={Style.carousel_card}>
                     <div className={Style.carousel_card1}>
                         <br></br>
-                        <Image
-                            src={images.image2}
-                            width="145" />
+                        <Link href='./details'>
+                            <Image
+                                src={images.image2}
+                                width="145" />
+                        </Link>
                         <p>Price: <b>0.50 ETH</b></p>
-                        <Button btnName="Buy Now" /><br></br>
+                        <Button btnName="Buy Now"/><br></br>
                     </div>
                     <div className={Style.carousel_card2}>
                         <br></br>
-                        <Image
-                            src={images.image3}
-                            width="172" />
+                        <Link href='./details'>
+                            <Image
+                                src={images.image3}
+                                width="172" />
+                        </Link>
                         <p>Price: <b>0.50 ETH</b></p>
                         <Button btnName="Buy Now" /><br></br>
                     </div>

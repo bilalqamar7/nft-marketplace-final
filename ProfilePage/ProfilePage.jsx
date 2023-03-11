@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+
+//Internal import
 import Styles from "./ProfilePage.module.css";
 import { BsSearch } from 'react-icons/bs';
+import img from '@/img';
 
 const ProfilePage = () => {
   const [username, setUsername] = useState('Bilal Qamar');
@@ -40,7 +44,7 @@ const ProfilePage = () => {
       <div className={Styles.profileContainer}>
         <div className={Styles.leftContainer}>
           <div className={Styles.profileImageContainer}>
-            <Image src="/profile-image.png" width={120} height={120} alt="Profile Image" />
+            <Image src={img.user10} width={120} height={120} alt="Profile Image" />
           </div>
           <div className={Styles.usernameContainer}>
             <span>{username}</span>
@@ -51,15 +55,15 @@ const ProfilePage = () => {
           </div>
         </div>
         <div className={Styles.rightContainer}>
-          <a href='./settings'>
+          <Link href='./settings'>
           <button className={Styles.settingsButton} onClick={handleSettingsButtonClick}>Settings</button>
-          </a>
+          </Link>
           {/*<a href='./uploadNFT'>
             <button className={Styles.createNFTButton}>Create NFT</button>
           </a>*/}
-          <a href='./uploadCollection'>
+          <Link href='./uploadCollection'>
             <button className={Styles.createCollectionButton}>Create Collection</button>
-          </a>
+          </Link>
         </div>
       </div>
       <div className={Styles.tabContainer}>
