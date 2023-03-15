@@ -56,11 +56,36 @@
         width: 90%;
         grid-template-columns: 1fr 2fr;
     }
+
+    .footer_social{
+        display: flex;
+        gap: 1.4rem;
+        font-size: 1.5rem;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+    }
+    
+    .footer_social a{
+        padding: .5rem;
+        border-radius: 50%;
+        transition:  all .3s ease-in;
+        display: grid;
+    }
 }
 
 @media screen and (max-width: 35em) {
     .footer_box{
         width: 90%;
         grid-template-columns: 1fr;
+    }
+
+    .footer_social{
+        display: flex;
+        gap: 1.2rem;
+        font-size: 1.5rem;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
     }
 }

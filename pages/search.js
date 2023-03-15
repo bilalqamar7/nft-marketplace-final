@@ -10,7 +10,7 @@ const search = () => {
       <div className={Style.search_box}>
         <div className={Style.search_box_heading}>
         </div>
-        These will be the searches of the user.
+        
         <div className={Style.search_box_form}>
           <SearchPage />
         </div>
