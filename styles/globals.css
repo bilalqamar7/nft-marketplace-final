@@ -26,7 +26,7 @@
   --shadow-dark-color: #2e2c2d;
   --bg-shadow-dark-color: #2e2c2d;
   --shadow-light-color: #0E131F;
-  --main-bg-color: black;
+  --main-bg-color: rgb(5, 5, 5);
 
   --box-shadow: 1px 1px 2px #ffffff,
     -1px -1px 2px #ffffff;
@@ -232,6 +232,7 @@ body {
   font-size: 16px;
   background-color: var(--main-bg-color);
   color: var(--icons-color);
+  
 }
 
 input {
@@ -283,6 +284,6 @@ a {
 
   body {
     color: white;
-    background: radial-gradient(black 50% , rgb(56, 0, 56) 250% )
+    background: radial-gradient(black 50% , rgb(56, 0, 56) 250% );
   }
 }

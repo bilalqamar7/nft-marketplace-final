@@ -8,8 +8,7 @@ const profile = () => {
   return (
     <div className={Style.profile}>
       <div className={Style.profile_box}>
-        <div className={Style.profile_box_heading}>
-        </div>
+        <div className={Style.profile_box_heading}></div>
 
         <div className={Style.profile_box_form}>
           <ProfilePage />
@@ -19,4 +18,4 @@ const profile = () => {
   );
 };
 
-export default profile
+export default profile;
