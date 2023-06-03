@@ -1,0 +1,132 @@
+.image6Icon,
+.images {
+    top: 0;
+    left: 0;
+}
+.image6Icon {
+    height: 100%;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+.images {
+    width: 150px;
+    height: 150px;
+}
+.imageFramerectangle {
+    position: relative;
+    border-radius: var(--br-11xl);
+    background-color: var(--white-10);
+    width: 144px;
+    height: 150px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.name {
+    font-size: large;
+}
+.text3242 {
+    width: 290px;
+    height: 73px;
+    flex-direction: row;
+    padding: var(--padding-3xs);
+    box-sizing: border-box;
+    text-align: left;
+    font-size: var(--font-size-13xl);
+}
+.name1,
+.text3242,
+.text32421,
+.text32422,
+.text32423 {
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.name1 {
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+}
+.text32421,
+.text32422,
+.text32423 {
+    width: 190px;
+    height: 73px;
+    flex-direction: row;
+    padding: var(--padding-3xs);
+    box-sizing: border-box;
+}
+.text32422,
+.text32423 {
+    width: 324px;
+}
+.text32423 {
+    width: 198px;
+}
+.collectionCardLarge,
+.collectionCardLargeParent {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+}
+.collectionCardLarge {
+    border-radius: var(--br-11xl);
+    background-color: rgba(255, 255, 255, 0.05);
+
+    flex-direction: row;
+    padding: var(--padding-3xs) var(--padding-11xl);
+    cursor: pointer;
+}
+.collectionCardLargeParent {
+    width: 70%;
+    margin: 2rem auto;
+
+    height: 750px;
+    overflow: hidden;
+    flex-shrink: 0;
+    flex-direction: column;
+    padding: var(--padding-mini) 0;
+    text-align: center;
+    font-size: var(--font-size-5xl);
+    color: white;
+    font-family: var(--font-poppins);
+}
+@media screen and (max-width: 768px) {
+    .collectionCardLargeParent {
+        height: inherit;
+    }
+
+    .collectionCardLarge {
+        border-radius: var(--br-11xl);
+        background-color: rgba(255, 255, 255, 0.05);
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+    .imageFramerectangle {
+    }
+    .name {
+    }
+    .text32421 {
+        height: 30px;
+    }
+    .text3242 {
+        height: 73px;
+    }
+    .text32423 {
+        height: 30px;
+    }
+    .text32422 {
+        height: 30px;
+    }
+    .collectionCardLargeParent .collectionCardLarge:last-child {
+        margin-bottom: 0;
+    }
+}

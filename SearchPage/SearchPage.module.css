@@ -1,0 +1,76 @@
+.SearchPage {
+    width: 100%;
+}
+
+.SearchPage_box {
+    width: 35%;
+    margin: 0 auto;
+    color: white;
+    background-color: transparent;
+    display: flex;
+    border-radius: 5rem;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: var(--box-shadow);
+}
+
+.SearchPage_box_icon {
+    font-size: 2.5rem;
+    padding: 0.5rem 1.2rem;
+    cursor: pointer;
+    color: white;
+}
+
+.SearchPage_box input {
+    width: 85%;
+    border: 0;
+    outline: 0;
+    padding: 0.8rem;
+    background-color: transparent;
+    font-size: 1.2rem;
+}
+
+.SearchPage_box input::placeholder {
+    color: gray;
+    font-size: 1.2rem;
+}
+
+.cards h3 {
+    margin-left: -15px;
+}
+
+.cards {
+    width: 80%;
+    margin: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .SearchPage_box {
+        width: 80%;
+        margin-top: 0.5rem;
+        margin-bottom: 3rem;
+        contain: content;
+    }
+
+    .SearchPage_box_icon {
+        font-size: 2rem;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        color: white;
+    }
+
+    .SearchPage_box input {
+        width: 95%;
+        border: 0;
+        outline: 0;
+        padding: 1rem;
+        background-color: transparent;
+        font-size: 0.9rem;
+    }
+
+    .SearchPage_box input::placeholder {
+        color: gray;
+        font-size: 0.9rem;
+    }
+}

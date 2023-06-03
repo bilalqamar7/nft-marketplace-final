@@ -1,21 +1,41 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 
 //Internal Import
-import Style from "@/styles/index.module.css"
+import Style from "@/styles/index.module.css";
 import {
-  HeroSection,
-  Popular,
-  Category,
-} from '@/components/componentsindex'
+    HeroSection,
+    Popular,
+    Category,
+    CollectionGroup,
+} from "@/components/componentsindex";
 
 const Home = () => {
-  return (
-    <div className={Style.homePage}>
-      <HeroSection />
-      <Popular />
-      <Category />
-    </div>
-  )
-}
+    const [collections, setCollections] = useState([]);
+    const handleClick = () => {
+        console.log("clicked");
+    };
+    useEffect(() => {
+        fetch("https://api.escuelajs.co/api/v1/products", {}).then(
+            async (resp) => {
+                // console.log("rasp", resp.json());
+                const data = await resp.json();
+                console.log("data", data);
+                setCollections(data);
+            }
+        );
+    }, []);
 
-export default Home
+    return (
+        <div className={Style.homePage}>
+            <HeroSection />
+            <CollectionGroup
+                onCollectionCardLargeClick={handleClick}
+                collections={collections}
+            />
+            <Popular />
+            {/* <Category /> */}
+        </div>
+    );
+};
+
+export default Home;

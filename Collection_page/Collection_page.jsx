@@ -6,11 +6,11 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import { User } from "@/components/userprofileheader/UserProfileHeaderIndex";
 //Internal import
-import Styles from "./ProfilePage.module.css";
+import Styles from "./Collection_page.module.css";
 import { BsSearch } from "react-icons/bs";
 import img from "@/img";
 import { TabGrid } from "@/components/Tabs/tabsindex";
-const ProfilePage = () => {
+const CollectionPage = () => {
     const [username, setUsername] = useState("Bilal Qamar");
 
     const { account } = useContext(AppContext);
@@ -108,4 +108,4 @@ const ProfilePage = () => {
     );
 };
 
-export default ProfilePage;
+export default CollectionPage;

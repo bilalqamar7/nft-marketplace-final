@@ -17,13 +17,14 @@ import {
 } from "./index";
 import { Button } from "../componentsindex";
 import image from "../../img";
+import { Accordion } from "react-bootstrap";
 
 function NavBar() {
     //UseState Components
     const [categories, setCategories] = useState(false);
     const [openSideMenu, setOpenSideMenu] = useState(false);
     const [connectButton, setConnectButton] = useState("Connect to Wallet");
-    const { account, web3Handler } = useContext(AppContext);
+    const { account, web3Handler, auth, setatuh } = useContext(AppContext);
     const openMenu = (e) => {
         const btnText = e.target.innerText;
         if (btnText == "Categories") {
@@ -32,13 +33,8 @@ function NavBar() {
             setCategories(false);
         }
     };
-
-    const openCategories = () => {
-        if (!categories) {
-            setCategories(true);
-        } else {
-            setCategories(false);
-        }
+    const disconnectbutton = () => {
+        setatuh(false);
     };
 
     const openSideBar = () => {
@@ -82,7 +78,7 @@ function NavBar() {
                 {/*START OF RIGHT SECTION*/}
                 <div className={Style.navbar_container_right}>
                     {/*  CATEGORIES MENU*/}
-                    <div className={Style.navbar_container_right_categories}>
+                    {/* <div className={Style.navbar_container_right_categories}>
                         <p onClick={(e) => openMenu(e)}>Categories</p>
                         {categories && (
                             <div
@@ -92,7 +88,7 @@ function NavBar() {
                                 <Categories />
                             </div>
                         )}
-                    </div>
+                    </div> */}
 
                     {/*  PROFILE Button*/}
                     <Link
@@ -113,12 +109,23 @@ function NavBar() {
                     {/*  Connect Wallet Button*/}
                     <div
                         className={Style.navbar_container_right_button_connect}>
-                        <Button
-                            btnName={
-                                account ? "Connected" : "Connect to Wallet"
-                            }
-                            handleClick={web3Handler}
-                        />
+                        {auth ? (
+                            <Button
+                                btnName={auth ? "Disconnect" : ""}
+                                handleClick={disconnectbutton}
+                            />
+                        ) : (
+                            <Button
+                                btnName={
+                                    account == "NO Wallet Found"
+                                        ? "NO Wallet Found"
+                                        : auth
+                                        ? "Connected"
+                                        : "Connect to Wallet"
+                                }
+                                handleClick={web3Handler}
+                            />
+                        )}
                     </div>
 
                     {/*  MENU Button*/}
